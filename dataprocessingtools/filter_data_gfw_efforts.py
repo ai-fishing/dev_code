@@ -65,8 +65,8 @@ for yi in range (len(years)):
         lons = lons.tolist()
         pointscoords = list(zip(lats, lons))
         
-    for pp in pointscoords:
-        if (pg.contains(Point(pp))):
-            fishpoints.append(pp)
+        for pp in pointscoords:
+            if (pg.contains(Point(pp))):
+                fishpoints.append(pp)
     
 print("totally fishing points in zone:",len(fishpoints))    
